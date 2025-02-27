@@ -1,5 +1,15 @@
+@use "../partials/typography";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'NunitoSans', sans-serif;
+    background-color: #FACEA4 ;
+    padding: 1rem;
 }
 
 h1 {

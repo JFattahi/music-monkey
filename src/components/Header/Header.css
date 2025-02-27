@@ -1,1 +1,49 @@
-/*# sourceMappingURL=Header.css.map */
+@font-face {
+  font-family: "TANHEADLINE";
+  src: url(/src/assets/fonts/TANHEADLINE-Regular.otf) format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("/src/assets/fonts/NunitoSans-Regular.woff") format(woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("/src/assets/fonts/nunitosans-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NunitoSans";
+  src: url("/src/assets/fonts/nunitosans-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "NunitoSans", sans-serif;
+  background-color: #FACEA4;
+  padding: 1rem;
+}
+
+h1 {
+  font-family: "TANHEADLINE", sans-serif;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header__logo {
+  width: 5rem;
+}/*# sourceMappingURL=Header.css.map */
