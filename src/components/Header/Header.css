@@ -40,8 +40,8 @@ h1 {
 
 .header {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
 }
 .header__logo {

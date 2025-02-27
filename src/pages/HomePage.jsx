@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
-import "./Homepage.scss"
+import "./Homepage.scss";
 
 function HomePage() {
   const [songs, setSongs] = useState([]);
@@ -31,11 +31,13 @@ function HomePage() {
           {songs.map((song) => (
             <div key={song.id} className="song__card">
               <Link to={`/tracks/${song.id}`}>
-                <img
-                  src={`http://localhost:8080/cover/${song.id}`}
-                  alt={song.title}
-                  className="song__cover"
-                />
+                <div className="song__image">
+                  <img
+                    src={`http://localhost:8080/cover/${song.id}`}
+                    alt={song.title}
+                    className="song__cover"
+                  />
+                </div>
                 <h2 className="song__title">{song.title}</h2>
                 <p className="song__artist">{song.artist}</p>
               </Link>
