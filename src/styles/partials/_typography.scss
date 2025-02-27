@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'TANHEADLINE';
+    src: url(/src/assets/fonts/TANHEADLINE-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('/src/assets/fonts/NunitoSans-Regular.woff') format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('/src/assets/fonts/nunitosans-medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NunitoSans';
+    src: url('/src/assets/fonts/nunitosans-bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
