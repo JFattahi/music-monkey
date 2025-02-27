@@ -11,7 +11,7 @@ function SongPage() {
         alt="song cover"
         className="song-cover"
       />
-      <audio controls>
+      <audio controls autoPlay>
         <source src={`http://localhost:8080/track/${id}`} type="audio/mpeg" />
       </audio>
     </div>
