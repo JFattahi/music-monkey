@@ -1,0 +1,20 @@
+@use "../styles/partials/global" as *;
+
+.song-page{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center ;
+    gap: 2rem;  
+    padding: 5rem;
+}
+
+.song-cover {
+    width: 50rem;
+    border-radius: 2rem;
+}
+
+.song-player {
+    width: 50rem;
+    height: 5rem;
+}
