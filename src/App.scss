@@ -1,1 +1,7 @@
-@use "./styles/partials/global"
+@use "./styles/partials/global";
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
