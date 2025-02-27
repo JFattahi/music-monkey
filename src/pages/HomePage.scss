@@ -1,0 +1,52 @@
+@use "../styles/partials/global" as *;
+
+.song {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem;
+  justify-content: center;
+  gap: 3rem;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #2b3446;
+    border-radius: 2rem;
+    width: 25rem;
+    height: 32rem;
+    overflow: hidden;
+    background-color: #000B1D;
+  }
+
+  &__cover {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 2rem;
+    flex-shrink: 0;
+  }
+
+  &__title {
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    padding-top: 3rem;
+    text-align: center;
+  }
+
+  &__artist {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  &__card a {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

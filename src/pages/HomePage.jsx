@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import "./Homepage.scss"
 
 function HomePage() {
   const [songs, setSongs] = useState([]);
@@ -26,18 +27,18 @@ function HomePage() {
       {loading && <p>Loading songs...</p>}
       {error && <p>{error}</p>}
       {!loading && !error && songs.length > 0 ? (
-        <div className="song-list">
+        <div className="song">
           {songs.map((song) => (
-            <div key={song.id} className="song-card">
+            <div key={song.id} className="song__card">
               <Link to={`/tracks/${song.id}`}>
                 <img
                   src={`http://localhost:8080/cover/${song.id}`}
                   alt={song.title}
-                  className="song-cover"
+                  className="song__cover"
                 />
+                <h2 className="song__title">{song.title}</h2>
+                <p className="song__artist">{song.artist}</p>
               </Link>
-              <h2>{song.title}</h2>
-              <p>{song.artist}</p>
             </div>
           ))}
         </div>
