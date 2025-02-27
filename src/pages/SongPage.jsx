@@ -12,7 +12,7 @@ function SongPage() {
         className="song-cover"
       />
       <audio controls>
-        <source src={`http://localhost:8080/tracks/${id}`} type="audio/mpeg" />
+        <source src={`http://localhost:8080/track/${id}`} type="audio/mpeg" />
       </audio>
     </div>
   );
